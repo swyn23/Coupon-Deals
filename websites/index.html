@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Deals & Coupons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SaveSmart</div>
+            <ul>
+                <li><a href="#amazon">Amazon Deals</a></li>
+                <li><a href="#student">Student Discounts</a></li>
+                <li><a href="#all">All Coupons</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Newsletter Signup -->
+        <section class="newsletter">
+            <h2>Get the Best Deals Weekly!</h2>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Amazon Deals Section -->
+        <section id="amazon" class="deals-section">
+            <h2>Amazon Deals</h2>
+            <div class="coupon-grid">
+                <div class="coupon-card">
+                    <h3>Amazon Electronics</h3>
+                    <p class="discount">20% OFF</p>
+                    <a href="https://www.rakuten.com/amazon.com" class="rakuten-link">Shop via Rakuten</a>
+                    <button class="copy-code" data-code="AMAZ20">AMAZ20</button>
+                </div>
+                <!-- Add more coupon cards -->
+            </div>
+        </section>
+
+        <!-- Student Discounts Section -->
+        <section id="student" class="deals-section">
+            <h2>Student Discounts</h2>
+            <div class="coupon-grid">
+                <div class="coupon-card">
+                    <h3>Student Prime</h3>
+                    <p class="discount">6 Months Free</p>
+                    <a href="https://www.rakuten.com/amazon-prime" class="rakuten-link">Join via Rakuten</a>
+                    <button class="copy-code" data-code="STUDENT6">STUDENT6</button>
+                </div>
+                <!-- Add more student deals -->
+            </div>
+        </section>
+
+        <!-- Coupon Codes Table -->
+        <section class="coupon-table">
+            <h2>All Coupon Codes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Store</th>
+                        <th>Code</th>
+                        <th>Discount</th>
+                        <th>Status</th>
+                        <th>Expiry</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="active">
+                        <td>Amazon</td>
+                        <td>AMAZ20</td>
+                        <td>20% Off Electronics</td>
+                        <td>Active</td>
+                        <td>12/31/2023</td>
+                    </tr>
+                    <tr class="expired">
+                        <td>Amazon Prime</td>
+                        <td>PRIME15</td>
+                        <td>15% Off First Month</td>
+                        <td>Expired</td>
+                        <td>11/01/2023</td>
+                    </tr>
+                    <!-- Add more rows -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 SaveSmart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
